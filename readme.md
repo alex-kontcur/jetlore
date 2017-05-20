@@ -34,5 +34,5 @@ Output Example:
 
 ```html
 <strong>Obama</strong> visited <strong>Facebook</strong> headquarters: <a
-href=”http://bit.ly/xyz”>http://bit.ly/xyz</a> @<a href=” http://twitter.com/elversatile ”>elversatile</a>
+href="http://bit.ly/xyz">http://bit.ly/xyz</a> @<a href="http://twitter.com/elversatile">elversatile</a>
 ```
