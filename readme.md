@@ -21,12 +21,14 @@ extend your code with new types like "hashtags" (that would be decorated with an
 complex/error prone would it be?
 
 Input Example:
+```
 Obama visited Facebook headquarters: http://bit.ly/xyz @elversatile
+```
 
-positions 14 through 22  → Entity
-positions 0  through 5   → Entity
-positions 48 through 56  → Twitter username
-positions 37 through 47  → Link
+positions 14 through 22  → Entity <br />
+positions 0  through 5   → Entity <br />
+positions 48 through 56  → Twitter username <br />
+positions 37 through 47  → Link <br />
 
 Output Example:
 
