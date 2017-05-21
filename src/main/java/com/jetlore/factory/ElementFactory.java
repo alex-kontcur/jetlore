@@ -27,7 +27,7 @@ public class ElementFactory {
     private Constructor getConstructor(Class clazz) throws Exception {
         Constructor constructor = cache.get(clazz);
         if (constructor == null) {
-            constructor = clazz.getConstructor(Item.class);
+            constructor = clazz.getConstructor(Element.class);
             Constructor old = cache.putIfAbsent(clazz, constructor);
             if (old != null) {
                 constructor = old;
