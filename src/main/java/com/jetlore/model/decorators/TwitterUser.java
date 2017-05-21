@@ -1,6 +1,6 @@
 package com.jetlore.model.decorators;
 
-import com.jetlore.model.Item;
+import com.jetlore.model.Element;
 
 /**
  * TwitterUser
@@ -10,13 +10,13 @@ import com.jetlore.model.Item;
  */
 public class TwitterUser extends AbstractDecorator {
 
-    public TwitterUser(Item item) {
-        super(item);
+    public TwitterUser(Element element) {
+        super(element);
     }
 
     @Override
     public String expose() {
-        String value = item.expose();
+        String value = element.expose();
         value = value.contains("@") ? value.split("@")[1] : value;
         return "@<a href=\"http://twitter.com/" + value + "\">" + value + "</a>";
     }

@@ -1,7 +1,6 @@
 package com.jetlore.model.decorators;
 
 import com.jetlore.model.Element;
-import com.jetlore.model.Item;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
@@ -13,9 +12,9 @@ import static com.google.common.base.Preconditions.checkNotNull;
  */
 public abstract class AbstractDecorator implements Element {
 
-    protected Item item;
+    protected Element element;
 
-    protected AbstractDecorator(Item item) {
-        this.item = checkNotNull(item);
+    protected AbstractDecorator(Element element) {
+        this.element = checkNotNull(element);
     }
 }

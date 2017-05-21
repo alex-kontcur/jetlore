@@ -1,6 +1,6 @@
 package com.jetlore.model.decorators;
 
-import com.jetlore.model.Item;
+import com.jetlore.model.Element;
 
 /**
  * Entity
@@ -10,12 +10,12 @@ import com.jetlore.model.Item;
  */
 public class Entity extends AbstractDecorator {
 
-    public Entity(Item item) {
-        super(item);
+    public Entity(Element element) {
+        super(element);
     }
 
     @Override
     public String expose() {
-        return "<strong>" + item.expose() + "</strong>";
+        return "<strong>" + element.expose() + "</strong>";
     }
 }

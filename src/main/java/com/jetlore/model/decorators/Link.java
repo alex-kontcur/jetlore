@@ -1,6 +1,6 @@
 package com.jetlore.model.decorators;
 
-import com.jetlore.model.Item;
+import com.jetlore.model.Element;
 
 /**
  * Link
@@ -10,13 +10,13 @@ import com.jetlore.model.Item;
  */
 public class Link extends AbstractDecorator {
 
-    public Link(Item item) {
-        super(item);
+    public Link(Element element) {
+        super(element);
     }
 
     @Override
     public String expose() {
-        String value = item.expose();
+        String value = element.expose();
         return "<a href=\"" + value + "\">" + value + "</a>";
     }
 }

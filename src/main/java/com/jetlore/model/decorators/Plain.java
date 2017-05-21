@@ -1,6 +1,6 @@
 package com.jetlore.model.decorators;
 
-import com.jetlore.model.Item;
+import com.jetlore.model.Element;
 
 /**
  * Plain
@@ -10,12 +10,12 @@ import com.jetlore.model.Item;
  */
 public class Plain extends AbstractDecorator {
 
-    public Plain(Item item) {
-        super(item);
+    public Plain(Element element) {
+        super(element);
     }
 
     @Override
     public String expose() {
-        return item.expose();
+        return element.expose();
     }
 }
