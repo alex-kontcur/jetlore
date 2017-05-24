@@ -10,7 +10,7 @@
     <property name="LOG_ROLLOVER_DIR" value="${logs.base.dir:-target}/logs.old"/>
 
     <property name="PATTERN_FORMAT"
-              value="%date{ISO8601,${zoneId}} [%-4.4thread] %-5level #%-4line %-20.20logger{5} [%-36.36X{session}/%-3X{action}] - %msg%n"/>
+              value="%date{ISO8601,${zoneId}} [%-4.4thread] %-5level #%-4line %-20.20logger{5} - %msg%n"/>
 
     <property name="MAX_HISTORY" value="60"/>
 

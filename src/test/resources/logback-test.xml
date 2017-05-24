@@ -3,14 +3,14 @@
 <configuration>
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
-            <pattern>%date{ISO8601,${zoneId}} [%-4.4thread] %-5level #%-4line %-20.20logger{5} [%-36.36X{session}/%-3X{action}] - %msg%n</pattern>
+            <pattern>%date{ISO8601,${zoneId}} [%-4.4thread] %-5level #%-4line %-20.20logger{5} - %msg%n</pattern>
         </encoder>
     </appender>
 
     <appender name="RUNTIME" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>target/logs/runtime.log</file>
         <encoder>
-            <pattern>%date{ISO8601,${zoneId}} [%-4.4thread] %-5level #%-4line %-20.20logger{5} [%-36.36X{session}/%-3X{action}] - %msg%n</pattern>
+            <pattern>%date{ISO8601,${zoneId}} [%-4.4thread] %-5level #%-4line %-20.20logger{5} - %msg%n</pattern>
         </encoder>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <fileNamePattern>target/logs.old/runtime.%d{yyyy-MM-dd}.log</fileNamePattern>
